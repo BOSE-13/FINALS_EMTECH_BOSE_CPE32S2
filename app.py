@@ -26,7 +26,7 @@ else:
     st.error("best_model.h5 not found. Please make sure the model file is in the same directory.")
     st.stop()
 
-st.title("👕👜 Fashion MNIST Classifier")
+st.title("Fashion MNIST Classifier")
 st.write("Upload a 28x28 grayscale image of a clothing item (e.g., T-shirt, sandal, coat).")
 
 # File uploader to get user image input
