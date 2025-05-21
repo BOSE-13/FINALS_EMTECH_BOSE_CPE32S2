@@ -19,12 +19,6 @@ class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
 
 # Load the trained model with error handling
 model_path = 'best_model.h5'
-if os.path.exists(model_path):
-    model = load_model(model_path)
-    st.success("Model loaded successfully.")
-else:
-    st.error("best_model.h5 not found. Please make sure the model file is in the same directory.")
-    st.stop()
 
 st.title("Fashion MNIST Classifier")
 st.write("Upload a 28x28 grayscale image of a clothing item (e.g., T-shirt, sandal, coat).")
