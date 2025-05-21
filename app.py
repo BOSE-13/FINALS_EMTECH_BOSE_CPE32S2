@@ -19,6 +19,7 @@ class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
 
 # Load the trained model with error handling
 model_path = 'best_model.h5'
+model = load_model(model_path)
 
 st.title("Fashion MNIST Classifier")
 st.write("Upload a 28x28 grayscale image of a clothing item (e.g., T-shirt, sandal, coat).")
